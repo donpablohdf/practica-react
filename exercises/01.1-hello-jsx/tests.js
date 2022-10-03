@@ -12,12 +12,5 @@ test("ReactDOM.render needs to be called once", () => {
 test("The returned JSX statement should be exactly this: <span>{ name } is { age } years old</span>", () => {
   const tree = renderer.create(ReactDOM.render.mock.calls[0][0]).toJSON();
   console.log(tree);
-  expect(tree).toMatchInlineSnapshot(`
-<span>
-  John
-   is 
-  12
-   years old
-</span>
-`);
+  expect(tree).toMatchInlineSnapshot(`<span>John is 12 years old </span>`);
 });

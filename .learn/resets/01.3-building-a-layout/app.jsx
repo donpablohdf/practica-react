@@ -13,16 +13,7 @@ const data = {
 };
 
 let content = (
-	<div class="card m-5 w-25">
-		<img class="card-img-top" src={data.image} alt="Bob Dylan" />
-		<div class="card-body">
-			<h5 class="card-title">{data.cardTitle}</h5>
-			<p class="card-text">{data.cardDescription}</p>
-			<a href={data.button.url} class="btn btn-primary">
-				{data.button.url}
-			</a>
-		</div>
-	</div>
+		<img src={data.image} />
 );
 /**
  * define the variable 'content' here and fill it with the
